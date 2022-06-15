@@ -1,0 +1,33 @@
+
+
+Page Object Model - is a Design Pattern
+Data Driver Approach 
+Libs/Generic Functions
+TDD
+Framework you are using
+Answer:
+====>  Hybrid framework + POM - Desgin pattern(SRP)
+
+POM and properties :  Implemented by Martin Flower 
+
+page
+1. for every page in web/mobile app we need to create seperate page java class
+2. never use assertions in the page class.
+3. page actions need to provide the page behaviour
+4. page locators(BY) should be private and will be accessed
+ via public page actions
+5. Driver apis should be used in the page class
+
+Test
+1. have to use a test client : TestNG/Junit/Pytest/NUnit/Jasmine/Mocha
+2. Assertions should be used in the Test class.
+3. never use the driver apis in test class
+
+
+
+Keyword driven(UTP/QFT) + DD => Hybrid
+1. Open browser
+2. Enter Url
+3. Enter username + DD
+4. Enter password
+5. click on login
