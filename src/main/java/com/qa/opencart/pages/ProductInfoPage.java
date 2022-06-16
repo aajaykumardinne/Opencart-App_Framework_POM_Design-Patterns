@@ -82,5 +82,8 @@ public class ProductInfoPage {
 		productInfoMap.put("Price", price);
 		productInfoMap.put(taxPriceKey, taxPriceValue);
 	}
+	
+	
+	
 
 }

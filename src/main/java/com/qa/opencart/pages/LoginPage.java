@@ -33,7 +33,7 @@ public class LoginPage {
 
 	// 4. page actions
 
-	@Step("getting the login page tite value....")
+	@Step("getting the login page title value....")
 	public String getLoginPageTitle() {
 		return eleUtil.waitForTitleIs(Constants.DEFAULT_TIME_OUT, Constants.LOGIN_PAGE_TITLE);
 	}
