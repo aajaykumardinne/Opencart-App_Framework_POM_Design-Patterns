@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.qa.opencart.utils.Constants;
 import com.qa.opencart.utils.ElementUtil;
 
 public class ProductInfoPage {
@@ -28,6 +29,8 @@ public class ProductInfoPage {
 
 	private By qty = By.id("input-quantity");
 	private By addToCartBtn = By.id("button-cart");
+	
+	private By cartAddMesg = By.cssSelector("div.alert.alert-success.alert-dismissible");
 
 	private Map<String, String> productInfoMap;
 
@@ -81,6 +84,25 @@ public class ProductInfoPage {
 
 		productInfoMap.put("Price", price);
 		productInfoMap.put(taxPriceKey, taxPriceValue);
+	}
+	
+	
+	public boolean getProductQuantity(String quantityValue) {
+		eleUtil.doSendKeys(qty, quantityValue);
+		return eleUtil.doIsDisplayed(qty);
+	}
+	
+	public boolean getAddToCart() {
+		eleUtil.doClick(addToCartBtn);
+		
+		String cartSuccessMesg = eleUtil.waitForElementToBeVisible(cartAddMesg, 10, 1000).getText();
+		System.out.println(cartSuccessMesg);
+		if(cartSuccessMesg.contains(Constants.SAMSUNG_CART_SUCCESS_MESG)) {
+			System.out.println("Product is added to the shopping cart");
+			return true;
+		}
+		
+		return false;
 	}
 
 }

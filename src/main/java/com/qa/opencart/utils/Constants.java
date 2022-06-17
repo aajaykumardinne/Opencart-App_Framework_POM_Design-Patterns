@@ -25,6 +25,8 @@ public class Constants {
 	public static final String REGISTER_SHEET_NAME = "registrationdata";
 	
 	public static final String PRODUCT_SHEET_NAME = "accountPageSearch";
+
+	public static final String SAMSUNG_CART_SUCCESS_MESG = "Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart!";
 	
 	
 	public static List<String> getExpectedAccSectionsList() {
