@@ -91,7 +91,7 @@ public class AccountsPageTest extends BaseTest {
 			{"Mac" , "iMac"},
 			{"Samsung", "Samsung Galaxy Tab 10.1"},
 			{"Apple", "Apple Cinema 30\""},
-			{"Macbook", "Macbook Pro"},
+	//		{"Macbook", "Macbook Pro"},
 		};
 	}
 	
