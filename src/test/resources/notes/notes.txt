@@ -3,7 +3,7 @@
 Page Object Model - is a Design Pattern
 Data Driver Approach 
 Libs/Generic Functions
-TDD
+TDD  -> based on the req we need to create the page classes.
 Framework you are using
 Answer:
 ====>  Hybrid framework + POM - Desgin pattern(SRP)
