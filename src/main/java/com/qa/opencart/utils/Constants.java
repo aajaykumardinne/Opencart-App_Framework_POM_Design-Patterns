@@ -6,13 +6,13 @@ import java.util.List;
 public class Constants {
 	
 	
-	public static final String LOGIN_PAGE_TITLE = "Account Login11";
+	public static final String LOGIN_PAGE_TITLE = "Account Login";
 	
 	public static final String LOGIN_PAGE_URL_FRACTION ="route=account/login";
 	
-	public static final int DEFAULT_TIME_OUT = 10;
+	public static final int DEFAULT_TIME_OUT = 7;
 	
-	public static final String ACCOUNTS_PAGE_TITLE = "My Account11";
+	public static final String ACCOUNTS_PAGE_TITLE = "My Account";
 	
 	public static final int  APPLE_IMAGES_COUNT = 6;
 	
@@ -25,6 +25,8 @@ public class Constants {
 	public static final String REGISTER_SHEET_NAME = "registrationdata";
 	
 	public static final String PRODUCT_SHEET_NAME = "accountPageSearch";
+
+	public static final String SAMSUNG_CART_SUCCESS_MESG = "Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart!";
 	
 	
 	public static List<String> getExpectedAccSectionsList() {
